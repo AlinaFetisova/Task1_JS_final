@@ -1,0 +1,101 @@
+@use '../base/variables';
+
+.header {
+  background-color: variables.$hover-blue;
+  color: #fff;
+  padding: 10px 40px 10px 220px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 20px 230px 20px 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+}
+
+.header-right .logo:hover,
+.header-right img:hover,
+.header-right span:hover {
+  cursor: pointer;
+  background-color: variables.$hover-blue;
+}
+
+.header-right img {
+  width: 24px;
+  height: 28px;
+  margin-top: -2px;
+}
+
+.header-right a {
+  color: variables.$text-dark;
+  background-color: #fff;
+  border: 1px solid variables.$main-color;
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header-right a:hover {
+  background-color: #e6f0ff;
+  color: variables.$text-dark;
+}
+
+.property-login a,
+.property {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.property-login a {
+  background-color: #fff;
+  border: 1px solid variables.$main-color;
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.property-login a:hover {
+  background-color: #e6f0ff;
+  color: variables.$text-dark;
+}
+
+.header .buttons a {
+  display: flex;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: bold;
+  border-color: #fff;
+  color: aqua;
+}
+
+.header img {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.property-image {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+}

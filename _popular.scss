@@ -1,0 +1,35 @@
+@use '../base/variables';
+
+.flight-option {
+  display: block;
+  margin: 25px auto 10px 220px;
+  text-align: left;
+  color: #333;
+} 
+
+.popular_places {
+  padding-left: 100px;
+  padding-right: 90px;
+  max-width: 1080px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.popular_places p {
+  color: #595959;
+}
+
+.popular_places h2 {
+  margin-top: 50px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.slider > .hotel-card:first-child {
+  margin-left: 50px;
+}

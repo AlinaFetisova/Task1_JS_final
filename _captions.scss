@@ -1,0 +1,21 @@
+@use '../base/variables';
+
+.captions {
+  text-align:center;
+  margin-top: 10px;
+}
+
+.captions p {
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+}
+
+.grey_color {
+  color: #666565;
+}
+
+.captions .grey_color{
+  color:#595959;
+}

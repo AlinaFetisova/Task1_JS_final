@@ -1,0 +1,157 @@
+@use '../base/variables';
+
+.popular-destinations {
+  max-width: 1050px;
+  margin: auto;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: none;
+  color: #000000;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.tab.active {
+  border: 1px solid variables.$light-blue;
+  color: variables.$light-blue;
+  background: #ffffff;
+  font-weight: 500;
+}
+
+.show-more {
+  color: variables.$light-blue;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+@media (max-width: 1024px){
+  .locations-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px; /* вертикальний та горизонтальний відступи */
+    max-width: 90%;
+   margin: 20px auto;
+    font-size: 11px;
+    cursor:pointer;
+  }
+
+  .footer-bottom {
+    max-width: 90%;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #000000;
+  }
+
+  .footer-flag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left:40px;
+  }
+
+}
+
+.footer-top {
+  padding-left: 180px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: #333;
+  text-align: left;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.footer-main {
+  background-color: #e0e0e0f0;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #222;
+}
+
+.footer-columns {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  text-align: left;
+}
+
+.footer-main h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-main ul li {
+  margin-bottom: 8px;
+}
+
+.footer-main ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-top p:hover{
+  text-decoration: underline;
+}
+
+.footer-main ul li a:hover {
+  text-decoration: underline;
+}
+
+.locations-grid div:hover{
+  text-decoration: underline;
+}
+
+.footer-flag span{
+  padding-left:30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer-flag img {
+    width: 24px;
+    height: auto;
+    padding-left:150px;
+}
+
+.footer-flag img:hover{
+  background-color:#bbbbbb;
+  max-width: 60px;
+}
+
+.footer-text {
+    text-align: center;
+    flex: 1 1 100%;
+    margin-top: 10px;
+}

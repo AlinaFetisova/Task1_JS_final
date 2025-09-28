@@ -1,0 +1,13 @@
+@use '../base/variables';
+
+body {
+  background-color: variables.$background-grey;
+  font-family: 'Inter', sans-serif;
+  color: variables.$text-dark;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #3498db;
+}

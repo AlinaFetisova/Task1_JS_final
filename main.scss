@@ -1,0 +1,24 @@
+// Імпортуємо всі частини стилів
+// main.scss
+
+// Base styles
+@use 'base/variables';
+@use 'base/typography';
+
+// Layout
+@use 'layout/header';
+@use 'layout/menu';
+@use 'layout/search';
+@use 'layout/popular';
+@use 'layout/interesting';
+@use 'layout/acomodation';
+@use 'layout/footer';
+
+// Components
+@use 'components/buttons';
+@use 'components/hotel-card';
+@use 'components/raiting';
+@use 'components/filter-buttons';
+@use 'components/slider';
+@use 'components/captions';
+@use 'components/travel';

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Забронюйте унікальні готелі, вілли та помешкання по всьому світу.">
+    <meta name="keywords" content="готелі, бронювання, подорожі, житло, вілли, іглу, замки, booking">
+    <meta name="author" content="Alina Feisova">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Booking - найкращі місця для проживання">
+    <meta property="og:description" content="Знайдіть ідеальне місце для вашої подорожі - від замків до глемпінгів.">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqpq-6zK3cs6d6dFWCxF4QXs1AjqVuKwsmQ&s">
+    <meta property="og:url" content="https://booking-project.example.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booking Site</title>
+</head>
+<body>
+    <!-- Верхнє меню -->
+    <header class="header">
+        <div class="logo">Booking.com</div>
+        <div class="header-right">
+            <span>UAH</span>
+            <img src="https://cdn3.iconfinder.com/data/icons/flags-circle/100/Ukraine-512.png" alt="Ukraine">  
+                <span class="property">Зареєструвати своє помешкання</span>
+                <a href="#">Зареєструватися</a>
+                <a href="#">Увійти</a>
+        </div>
+    </header>
+    
+    <nav class="menu">
+        <a href="#">Помешкання</a>
+        <a href="#">Переліт</a>
+        <a href="#">Оренда авто</a>
+        <a href="#">Дозвілля</a>
+        <a href="#">Таксі з/до аеропорту</a>
+    </nav>
+
+    <!-- Форма пошуку -->
+    <main>
+    <section class="search-section">
+        <div class="background-image">
+            <div class="search-text">
+                <div class="property-login">
+                    <h3>Знайдіть помешкання для </h3>
+                    <h3>наступної подорожі</h3>
+                    <p>Знаходьте пропозиції готелів, приватних помешкань та багато іншого...</p>
+                    <button>Забронювати</button>
+                </div>    
+            </div>   
+
+        <form class="search-form">
+            <div class="search-inner">
+                <div class="search-item">
+                    <span class="icon">🏨</span>
+                    <input type="text" placeholder="Бровари">
+                    <span class="clear">✖</span>
+            </div>
+
+            <div class="search-item">
+                <span class="icon">📅</span>
+                <span class="label">Дата заїзду — Дата виїзду</span>
+            </div>
+
+            <div class="search-item">
+                <span class="icon">👤</span>
+                <span class="label">2 дорослих · 0 дітей · 1 номер</span>
+                <span class="arrow">▾</span>
+            </div>
+            </div>
+
+            <button class="search-button">Шукати</button>
+        </form>
+
+        </div>
+    </section> 
+    
+<!-- Пошук за типом помешкання -->
+    <section class="interesting_place">
+        <div class="container">
+            <h2>Пошук за типом помешкання</h2>
+            <div class="slider">
+                <button class="prev">&#10094;</button>
+                <div class="images">
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/595550862.jpeg?k=3514aa4abb76a6d19df104cb307b78b841ac0676967f24f4b860d289d55d3964&o=" alt="Готелі">
+                        <p>Готелі</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595548591.jpeg?k=01741bc3aef1a5233dd33794dda397083092c0215b153915f27ea489468e57a2&o=" alt="Апартаменти">
+                        <p>Апартаменти</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/595551044.jpeg?k=262826efe8e21a0868105c01bf7113ed94de28492ee370f4225f00d1de0c6c44&o=" alt="Курортні готелі">
+                        <p>Курортні готелі</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/620168315.jpeg?k=300d8d8059c8c5426ea81f65a30a7f93af09d377d4d8570bda1bd1f0c8f0767f&o=" alt="Вілла">
+                        <p>Вілли</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595549239.jpeg?k=ad5273675c516cc1efc6cba2039877297b7ad2b5b3f54002c55ea6ebfb8bf949&o=" alt="Шале">
+                        <p>Шале</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595550000.jpeg?k=71eeb3e0996d7f734e57a6fa426c718749a36df768ca5d2fb1dc65fcd7483c1d&o=" alt="Котеджі">
+                        <p>Котеджі</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450090.jpeg?k=52f6b8190edb5a9c91528f8e0f875752ce55a6beb35dc62873601e57944990e4&o=" alt="Місця для глемпінгу">
+                        <p>Місця для глемпінгу</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/595551195.jpeg?k=fe19403cca087623a33bf24c4154a636cd26d04c2aa948634fb05afa971e7767&o=" alt="Апартаменти з обслуговуванням">
+                        <p>Апартаменти з обслуговуванням</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595550229.jpeg?k=2ae1f5975fa1f846ac707d3334eb604a7e8f817f640cbd790185b2691532476b&o=" alt="Будинки для відпустки">
+                        <p>Будинки для відпустки</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595550178.jpeg?k=1db9bffadd03a0f2a9f0a06ba6c7751b16465f2dd251738f229d7a57dca799ef&o=" alt="Гостьові будинки">
+                        <p>Гостьові будинки</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595550415.jpeg?k=8967853a074040381dfa25a568e6c780e309b529e0c144995c5bbc9644721eca&o=" alt="Хостели">
+                        <p>Хостели</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595550975.jpeg?k=6d2c22368ec017e1f99a4811c8abb1cb2d7fd829c9ddd12a82ff1aa77ab7da19&o=" alt="Мотелі">
+                        <p>Мотелі</p> 
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595549020.jpeg?k=f5df2d3dc0000073bef517b0cab9593036f3f1aafa2421df31a6538a8c56b834&o=" alt="Помешкання типу ліжко та сніданок">
+                        <p>Помешкання типу "ліжко та сніданок"</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595551145.jpeg?k=52a1d8bd9bc1f2199bf8d95f5399377c521d3a6291013e3a36f4dbeecd337bd7&o=" alt="Рьокани">
+                        <p>Рьокани</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595551127.jpeg?k=3ce17a8b06333670edd53b58e47ab30acebb737f3bd21ebc7ea2ea849be7dc3e&o=" alt="Ріади">
+                        <p>Ріади</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/595550306.jpeg?k=00c1d9a10179cc21b1e7e2ad1429ac21a5e779f258cf4cf66ddce30d618c05c9&o=" alt="Парк-готелі">
+                        <p>Парк-готелі</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595550377.jpeg?k=ef93cbc1a3af0d6db84e27b6da280a4ef24dbcfeb065fcfeae4fe9c43dddd2da&o=" alt="Розміщення в сім'ї">
+                        <p>Розміщення в сім'ї</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/595549938.jpeg?k=88e50f4acf09b4edc03ca94818723b3baca6eeaf49bf318edf8dc6690775c480&o=" alt="Кемпінги">
+                        <p>Кемпінги</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/595550059.jpeg?k=323042e47ead9072a6ca4cd3386519f9c59faff1b74043d17b486dbd5f0d5d67&o=" alt="Заміські будинки">
+                        <p>Заміські будинки</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595550098.jpeg?k=d1b5a6f6faa0c76496d57dd0d263a88c07ad220b3873e14fcd71c9d8a81c5c25&o=" alt="Фермерські будинки">
+                        <p>Фермерські будинки</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/595549146.jpeg?k=ac87efa3e3faf75d3d5e24376940d48f3a0c46d73dee59fce17907166502552e&o=" alt="Ботелі">
+                        <p>Ботелі</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/595550925.jpeg?k=c0db68290ad93f4dea18b95395397a874a8801159fb4d6308bd6164ebcd28a11&o=" alt="Намети-люкс">
+                        <p>Намети-люкс</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450075.jpeg?k=d23cf8443780ac09f46f59e40393d75dbe64b06029b4959c60b81b7fdefc9be0&o=" alt="Помешкання з кухнею">
+                        <p>Помешкання з кухнею</p>
+                    </div>
+                    <div class="hotel-card">
+                        <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/57175023.jpeg?k=dc0319d4d64ded9ee4b0ddb162a2e80db7899300b7bf21b34506888895d74c79&o=" alt="Маленькі будиночки">
+                        <p>Маленькі будиночки</p>
+                    </div>
+                </div>
+            <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Місця для поїдки-->
+    <section class="type_acomodation">
+        <h2>Сплануйте поїздку швидко та просто</h2>
+        <p>Виберіть тип відпочинку та відвідайте найкращі місця в Україні</p>
+        <div class="filter-buttons">
+            <button class="filter-btn active">🏙️ Місто</button>
+            <button class="filter-btn">🏖️ Пляж</button>
+            <button class="filter-btn">🚴‍♀️ Активний відпочинок</button>
+            <button class="filter-btn">🛀 Спокійний відпочинок</button>
+            <button class="filter-btn">❤️ Романтика</button>
+            <button class="filter-btn">🍽️ Їжа</button>
+          </div>
+
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <div class="images">
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031561.jpg?k=3785639c8b08e8e8f26add089345db79a04cd0c4883f9cee30356757b2a875d9&o=" alt="Черкаси">
+                    <div class="captions">
+                        <p>Черкаси</p>
+                        <p class="grey_color">за 105 км</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031525.jpg?k=fc3c04e8c772de24ce2e67dca600f3e3124a7d8f92410f6b5b13879b7e78d61d&o=" alt="Кременчук">
+                    <div class="captions">
+                        <p>Кременчук</p>
+                        <p class="grey_color">за 106 км</p>
+                    </div>
+                </div>   
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031523.jpg?k=94c9da32ea39bed2040c456d2f7279c19877bdca3087dcabdfaadf0a49494420&o=" alt="Кривий Ріг">
+                    <div class="captions">
+                        <p>Кривий Ріг</p>
+                        <p class="grey_color">за 107 км</p>
+                    </div>
+                </div>   
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031457.jpg?k=5f29452feb6de7b704bb9f95facdf518850f7079c061753a681bff9345aff0c4&o=" alt="Умань">
+                    <div class="captions">
+                        <p>Умань</p>
+                        <p class="grey_color">за 152 км</p>
+                    </div> 
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031501.jpg?k=c2017108ea409044401da86ad1fedfbff6f8b5757069fc0346802ce02c2a8463&o=" alt="Миколаїв">
+                    <div class="captions">
+                        <p>Миколаїв</p>
+                        <p class="grey_color">за 172 км</p>
+                    </div>
+                </div>
+                <div class="destination">   
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031506.jpg?k=fb8c859e5ac36dd50fa14b995b8a237ec0dd0aae033396b5cf8f2b5812369fc5&o=" alt="Миргород">
+                    <div class="captions">
+                        <p>Миргород</p>
+                        <p class="grey_color">за 189 км</p>
+                    </div>
+                </div> 
+                <div class="destination">   
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031556.jpg?k=3254e674d1526d51752f31ff63d67a83b0f231656c0b19744ce108717875a124&o=" alt="Дніпро">
+                    <div class="captions">
+                        <p>Дніпро</p>
+                        <p class="grey_color">за 205 км</p>
+                    </div>
+                </div> 
+                <div class="destination">  
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031491.jpg?k=39d73e440315048d7311f1cbe97fe3d4fa276fecc8e0b546740e6c0f81cd30ce&o=" alt="Полтава">
+                    <div class="captions">
+                        <p>Полтава</p>
+                        <p class="grey_color">за 205 км</p>
+                    </div>
+                </div>    
+                <div class="destination">  
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031535.jpg?k=27c698f7170e35156950d69fda0f1ac6d1c9e3b3724c267bd86a36f5ff72afa9&o=" alt="Херсон">
+                    <div class="captions">
+                        <p>Херсон</p>
+                        <p class="grey_color">за 210 км</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031567.jpg?k=2139476853b9912c699ffb5a176f600e41d0866aeec2fd6e9d7a66595bed7a6a&o=" alt="Біла Церква">
+                    <div class="captions">
+                        <p>Біла Церква</p>
+                        <p class="grey_color">за 213 км</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031565.jpg?k=98cc5b15fa34f887e39316a80941cbeabdf82e2013d7b64db06792f085c9c8d6&o=" alt="Бориспіль">
+                    <div class="captions">
+                        <p>Бориспіль</p>
+                        <p class="grey_color">за 226 км</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031437.jpg?k=8ed263d4e8400b09a35b55cae0a10e31334f4d114f2ee4cab71b1068ddc7dd26&o=" alt="Запоріжжя">
+                    <div class="captions">
+                        <p>Запоріжжя</p>
+                        <p class="grey_color">за 230 км</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031563.jpg?k=14d900e11f28244e6e124dea3c2f6ad6f7a6b1bd7ca2b77e4e5cc34af8e57b40&o=" alt="Бровари">
+                    <div class="captions">
+                        <p>Бровари</p>
+                        <p class="grey_color">за 247 км</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031519.jpg?k=777005803b4e642f7faf447244069a92abd8624d3ad01d66d1f7d863ec08b723&o=" alt="Київ">
+                    <div class="captions">
+                        <p>Київ</p>
+                        <p class="grey_color">за 250 км</p>
+                    </div>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140031496.jpg?k=c21ae59342ca3422fb57349629ef6629a39356f26f4b6b207c38e46cae05ce47&o=" alt="Одеса">
+                    <div class="captions">
+                        <p>Одеса</p>
+                        <p class="grey_color">за 253 км</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>     
+        </div>
+    </section>
+
+    <!-- Унікальні помешкання -->
+    <section class="popular_places">
+        <h2>Забронюйте наші найпопулярніші унікальні помешкання</h2>
+        <p>Від замків і вілл до ботелів та іглу – у нас є все</p>
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <div class="images">
+            <div class="hotel-card">
+                <div class="favorite">&#9825;</div>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/280950287.webp?k=d5b9f77442fa93b93c86a720abebfe39a3f9532d4efa6a9cefa231a2ded6bd95&o=" alt="Domki Wierszyki Shelters">
+                <div class="hotel-info">
+                    <h3>Domki Wierszyki Shelters</h3>
+                    <p>Польща, Закопане</p>
+                    <div class="raiting-block">
+                        <div class="raiting-number">9.7</div> 
+                        <div class="raiting-text">
+                        <strong>Відмінно</strong>
+                        <span>89 відгуків</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="hotel-card">
+                <div class="favorite">&#9825;</div>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/132452060.webp?k=f9cd3042175e0da40abf6d3988b9f3ac91aaeaefd9941081dbadfd0875c8ab27&o=" alt="Ranczo w Dolinie">
+                <div class="hotel-info">
+                    <h3>Ranczo w Dolinie</h3>
+                    <p>Польща, Kiszkowo</p>
+                    <div class="raiting-block">
+                        <div class="raiting-number">9.7</div>
+                        <div class="raiting-text">
+                        <strong>Відмінно</strong>
+                        <span>179 відгуків</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="favorite">&#9825;</div>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/187855604.webp?k=0abbcd2115938850aa3372f4e7bf847f2aeb9579d674ec40ff273230a840eb9d&o=" alt="Tiny House Dreischwesternherz">
+                <div class="hotel-info">
+                    <h3>Tiny House Dreischwesternherz</h3>
+                    <p>Німеччина, Трір</p>
+                    <div class="raiting-block">
+                        <div class="raiting-number">9.5</div>
+                        <div class="raiting-text">
+                        <strong>Відмінно </strong>
+                        <span>154 відгуків</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="favorite">&#9825;</div>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/178421525.webp?k=6c9cfca83aa49631c55eaed32fb7a6eb68573ffa76a47b23346504830249b853&o=" alt="Das rote Haus hinterm Deich">
+                <div class="hotel-info">
+                    <h3>Das rote Haus hinterm Deich</h3>
+                    <p>Німеччина, Simonsberg</p>
+                    <div class="raiting-block">
+                        <div class="raiting-number">9.2</div>
+                        <div class="raiting-text">
+                            <strong>Чудово</strong>
+                            <span>47 відгуків</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="favorite">&#9825;</div>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/126764303.webp?k=46a8a949ef420510834df06d0d88e293fbaae80cd1e17883cb78c1bba3eb0366&o=" alt="Agriturismo Cabrele">
+                <div class="hotel-info">
+                    <h3>Agriturismo Cabrele</h3>
+                    <p>Італія, Santorso</p>
+                    <div class="raiting-block">
+                        <div class="raiting-number">9.4</div>
+                        <div class="raiting-text">
+                            <strong>Чудово</strong>
+                            <span>286 відгуків</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="favorite">&#9825;</div>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/611064739.webp?k=4db7bea76e24412eeca2759ad62e5643ced35d29c0eac26ff010604ad4cd81c7&o=" alt="Mini Hotel Übernachten Im Gurkenfass">
+                <div class="hotel-info">
+                    <h3>Mini Hotel Übernachten Im Gurkenfass</h3>
+                    <p>Німеччина, Люббенау</p>
+                    <div class="raiting-block">
+                        <div class="raiting-number">7.9</div>
+                        <div class="raiting-text">
+                            <strong>Добре</strong>
+                            <span>180 відгуків</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="favorite">&#9825;</div>
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/154543781.webp?k=847c6d1ffe92003d2d7c9cf7043c6acda1c550e6f0c7c981370a6303f12a10cf&o=" alt="Carinya Park">
+                <div class="hotel-info">
+                    <h3>Carinya Park</h3>
+                    <p>Австралія, Gembrook</p>
+                    <div class="raiting-block">
+                        <div class="raiting-number">9.3</div>
+                        <div class="raiting-text">
+                            <strong>Добре</strong>
+                            <span>33 відгуки</span>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <button class="next">&#10095;</button> 
+            </div> 
+        </div>
+     </section>
+
+    <!--Пропозиції на вихідні-->
+    <section class="propositions_week">
+        <h2>Пропозиції на вихідні</h2>
+        <p>Зекономте на проживанні в період 28 березня - 30 березня</p>
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+            <div class="images">
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/264043077.jpg?k=0c8c74b33192b1556a5e24d329f79942c2204190614c32900fc0bb28381ad9ef&o=" alt="De Paris Hotel">
+                <div class="hotel-info">
+                <h3>De Paris Hotel</h3>
+                <p>Київ, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">7</div>
+                    <div class="raiting-text">
+                        <strong>Добре</strong>
+                        <span>514 відгуків</span> 
+                    </div>
+                </div> 
+                <div class="offer">Пропозиція "Вигідний початок року"</div>
+                <p>2 ночі <span class="price-old">UAH 4 600</span><span class="price-new"> UAH 2 300</span></p>
+                </div>
+            </div> 
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/54470343.jpg?k=03d43504c76ff4502d5986834921a41b33350944155e1b730b7aa25cceb8cb2f&o=" alt="UNO Design Hotel">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>
+                <h3>UNO Design Hotel</h3>
+                <p>Одеса, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">9.5</div>
+                    <div class="raiting-text">
+                        <strong>Відмінно</strong>
+                        <span>436 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Пропозиція "Вигідний початок року"</div>
+                <p>2 ночі <span class="price-old">UAH 3 680</span><span class="price-new"> UAH 2 760</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/333316600.jpg?k=ddbe8f1abdbd85599475c03149ee426f54d2f76975ba8dbe7934186de088ed02&o=" alt="SMALL HOTEL">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>    
+                <h3>Small Hotel</h3>
+                <p>Вінниця, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">9.6</div>
+                    <div class="raiting-text">
+                        <strong>Відмінно</strong>
+                        <span>1 317 відгуків</span>
+                    </div>
+                </div>
+                <p>2 ночі <span class="price-old">UAH 6 000</span><span class="price-new"> UAH 5 940</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/532510446.jpg?k=a168e3325aedb1038dd1f0b1608f20b932d4fc8ff26416083a8e506b481f1337&o=" alt="MYFREEDOM Апартаменти">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>   
+                <h3>MYFREEDOM Апартаменти на Подолі, метро Тараса Шевченка</h3>
+                <p>Київ, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">8.1</div>
+                    <div class="raiting-text">
+                        <strong>Дуже добре</strong>
+                        <span>360 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Пропозиція "Вигідний початок року"</div>
+                <p>2 ночі <span class="price-old">UAH 6 064</span><span class="price-new"> UAH 3 638</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/538482333.jpg?k=7529f737b779acd3c38a653102012729508282eb890cb6a5be5af987c3d7872d&o=" alt="Continental Hotel">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>
+                <h3>Continental Hotel</h3>
+                <p>Одеса, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">9</div>
+                    <div class="raiting-text">
+                        <strong>Чудово</strong>
+                        <span>627 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Сезонна пропозиція</div>
+                <p>2 ночі <span class="price-old">UAH 3 708</span><span class="price-new"> UAH 3 152</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/478791379.jpg?k=67fa8f0e90ea179bc3ea46e23710359aa9ff18b0ab726b0a7897fec8820b169a&o=" alt="Apartment 1, Podillya">
+                <div class="hotel-info">
+                <h3>Apartment 1, Podillya</h3>
+                <p>Вінниця, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">9.9</div>
+                    <div class="raiting-text">
+                        <strong>Відмінно</strong>
+                        <span>48 відгуків</span>
+                    </div>
+                </div>
+                <p>2 ночі <span class="price-old">UAH 3 800</span><span class="price-new"> UAH 3 610</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/532519474.jpg?k=a51c14d19b69861cb7ef5330e00f89bdf6ea834bfc5208925208045bda0467cb&o=" alt="MYFREEDOM Апартаменти метро Берестейська">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>
+                <h3>MYFREEDOM Апартаменти метро Берестейська</h3>
+                <p>Київ, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">8.3</div>
+                    <div class="raiting-text">
+                        <strong>Дуже добре</strong>
+                        <span>241 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Сезонна пропозиція</div>
+                <p>2 ночі <span class="price-old">UAH 4 883</span><span class="price-new"> UAH 3 174</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/566863578.jpg?k=44641694b2ad5a9faa8408c0c83d9abae18cef99b1a347703258a53c8fe07442&o=" alt="Sunday Hotel">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>
+                <h3>Sunday Hotel</h3>
+                <p>Одеса, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">9</div>
+                    <div class="raiting-text">
+                        <strong>Чудово</strong>
+                        <span>505 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Обмежена пропозиція</div>
+                <p>2 ночі <span class="price-old">UAH 2 500</span><span class="price-new"> UAH 1 625</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/162963365.jpg?k=2d0be070a5016bb888902c2c8edb91aef7c3312b9a17aa08d25c0555fcedd9ff&o=" alt="Favor Sport Hotel">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>
+                <h3>Favor Sport Hotel</h3>
+                <p>Київ, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">9</div>
+                    <div class="raiting-text">
+                        <strong>Чудово</strong>
+                        <span>2 526 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Сезонна пропозиція</div>
+                <p>2 ночі <span class="price-old">UAH 4 400</span><span class="price-new"> UAH 3 432</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/497908971.jpg?k=fae0c182043ee919752acbe0e402c1c7da96e41522085e6268c9a94814cccdd6&o=" alt="Atlantic Garden Resort">
+                <div class="hotel-info">
+                <h3>Atlantic Garden Resort</h3>
+                <p>Одеса, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">8.8</div>
+                    <div class="raiting-text">
+                        <strong>Блискуче</strong>
+                        <span>1 025 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Пропозиція "Вигідний початок року"</div>
+                <p>2 ночі <span class="price-old">UAH 6 200</span><span class="price-new"> UAH 3 720</span></p>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/419906094.jpg?k=c232e1cd7d76ad4e2d7fe2390655ad01f287fd91e025c86d586ac339806173f9&o=" alt="MYFREEDOM Апартаменти, Теремки, ВДНГ">
+                <div class="hotel-info">
+                <span class="genius">Genius</span>    
+                <h3>MYFREEDOM Апартаменти, Теремки, ВДНГ</h3>
+                <p>Київ, Україна</p>
+                <div class="raiting-block">
+                    <div class="raiting-number">9.2</div>
+                    <div class="raiting-text">
+                        <strong>Чудово</strong>
+                        <span>116 відгуків</span>
+                    </div>
+                </div>
+                <div class="offer">Сезонна пропозиція</div>
+                <p>2 ночі <span class="price-old">UAH 7 396</span><span class="price-new"> UAH 4 438</span></p>
+                </div>
+            </div>
+        </div>
+        <button class="next">&#10095;</button> 
+    </div>
+    </section>
+
+    <!-- Подорожуйте більше, витрачайте менше -->
+    <section class="travel_more">
+        <h2>Подорожуйте більше, витрачайте менше</h2>
+        <div class="travel-container">
+            <div class="travel-text">
+                <p><strong>Увійдіть в акаунт і зекономте</strong></p>
+                <p>Економте від 10% у помешканнях, що беруть участь у програмі, – просто шукайте синій значок Genius</p>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">Увійти</a>
+                    <a href="#" class="btn-secondary">Зареєструватися</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Популярно серед мандрівників України -->
+    <section class="popular-destinations">
+        <h2>Популярно серед мандрівників з України</h2>
+      
+        <div class="tabs">
+          <button class="tab active">Міста всередині країни</button>
+          <button class="tab">Міста в інших країнах</button>
+          <button class="tab">Регіони</button>
+          <button class="tab">Країни</button>
+          <button class="tab">Помешкання</button>
+        </div>
+      
+        <div class="locations-grid">
+            <div>Готелі міста Львів</div>
+            <div>Готелі міста Київ</div>
+            <div>Готелі міста Яремче</div>
+            <div>Готелі міста Одеса</div>
+            <div>Готелі міста Буковель</div>
+            
+            <div>Готелі міста Чернівці</div>
+            <div>Готелі міста Дніпро</div>
+            <div>Готелі міста Івано-Франківськ</div>
+            <div>Готелі міста Вінниця</div>
+            <div>Готелі міста Славське</div>
+            
+            <div>Готелі міста Ужгород</div>
+            <div>Готелі міста Кам'янець-Подільский</div>
+            <div>Готелі міста Луцьк</div>
+            <div>Готелі міста Мукачево</div>
+            <div>Готелі міста Полтава</div>
+            
+            <div>Готелі міста Трускавець</div>
+            <div>Готелі міста Тернопіль</div>
+            <div>Готелі міста Хмельницький</div>
+            <div>Готелі міста Ворохта</div>
+            <div>Готелі міста Рівне</div>
+            
+            <div>Готелі міста Суми</div>
+            <div>Готелі міста Берегове</div>
+            <div>Готелі міста Харків</div>
+            <div>Готелі міста Східниця</div>
+            <div>Готелі міста Житомир</div>
+          </div>
+          
+      
+        <a href="#" class="show-more">+ Показати більше</a>
+      </section>
+    
+    <!-- Футер 1 -->
+    <div class="footer-top">
+        <p>
+          Країни · Регіони · Міста · Райони · Аеропорти · готелів · Пам'ятки · Будинки для відпустки · Апартаменти · Курортні готелі · Вілли · Хостели · Помешкання типу "ліжко та сніданок"
+        </p>
+        <p>
+          Гостьові будинки · Унікальні помешкання · Усі напрямки · Усі напрямки перельотів · Усі пункти прокату · Усі напрямки для відпусток · Путівники · Ідеї для поїздки · Відгуки
+        </p>
+        <p>
+          Дізнайтеся про проживання на місяць
+        </p>
+    </div>
+      
+    </main>
+    <!-- Футер 2-->
+    <footer class="footer-main">
+        <div class="footer-columns">
+            <div>
+                <h4>Підтримка</h4>
+                <ul>
+                    <li><a href="#">Коронавірус (COVID-19): питання та відповіді</a></li>
+                    <li><a href="#">Керуйте своїми подорожами</a></li>
+                    <li><a href="#">Зв'язатися зі Службою підтримки</a></li>
+                    <li><a href="#">Центр ресурсів з безпеки</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Різне</h4>
+                <ul>
+                    <li><a href="#">Програма лояльності Genius</a></li>
+                    <li><a href="#">Сезонні та святкові пропозиції</a></li>
+                    <li><a href="#">Статті про подорожі</a></li>
+                    <li><a href="#">Booking.com для компаній</a></li>
+                    <li><a href="#">Traveller Review Awards</a></li>
+                    <li><a href="#">Прокат авто</a></li>
+                    <li><a href="#">Пошук авіаквитків</a></li>
+                    <li><a href="#">Замовлення столиків в ресторанах</a></li>
+                    <li><a href="#">Booking.com для туристичних консультантів</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Правила та налаштування</h4>
+                <ul>
+                    <li><a href="#">Конфіденційність і файли cookie</a></li>
+                    <li><a href="#">Правила та умови</a></li>
+                    <li><a href="#">Розв'язання суперечок</a></li>
+                    <li><a href="#">Заява про протидію сучасному рабству</a></li>
+                    <li><a href="#">Заява про права людини</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Партнери</h4>
+                <ul>
+                    <li><a href="#">Увійти в Екстранет</a></li>
+                    <li><a href="#">Допомога партнерам</a></li>
+                    <li><a href="#">Зареєструвати своє помешкання</a></li>
+                    <li><a href="#">Станьте нашим афіліатом</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Загальна інформація</h4>
+                <ul>
+                    <li><a href="#">Про Booking.com</a></li>
+                    <li><a href="#">Як ми працюємо</a></li>
+                    <li><a href="#">Ековідповідальність</a></li>
+                    <li><a href="#">Прес-центр</a></li>
+                    <li><a href="#">Вакансії</a></li>
+                    <li><a href="#">Для інвесторів</a></li>
+                    <li><a href="#">Корпоративні контакти</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-flag">
+                <img src="https://cdn3.iconfinder.com/data/icons/flags-circle/100/Ukraine-512.png" alt="Ukraine">  
+                <span>UAH</span>
+            </div>
+            <div class="footer-text">
+                <p>Booking.com входить у групу компаній Booking Holdings Inc. – світового лідера в галузі онлайн-туризму та супутніх послуг.</p>
+                <p>Авторські права © 1996–2025 Booking.com™. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@use '../base/variables';
+
+.hotel-card, .destination {
+  flex: 0 0 auto;
+  width: 250px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img,
+.destination img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hotel-card h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: variables.$text-dark;
+}
+
+.hotel-info {
+  padding: 10px;
+}
+
+.hotel-info p {
+  color: #666565;
+}
+
+.hotel-card p,
+.captions p {
+  margin: 0 0 10px;
+  color: #000;
+  font-size: 14px;
+  margin-top:10px;
+  font-weight: bold;
+  cursor:pointer;
+}

@@ -1,0 +1,56 @@
+@use '../base/variables';
+
+.prev,
+.next {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height:40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.prev:active,
+.next:active{
+  transform: translateY(-50%) scale(0.95);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: variables.$background-grey;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.images {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: auto;
+  gap: 0;
+  flex:1;
+}

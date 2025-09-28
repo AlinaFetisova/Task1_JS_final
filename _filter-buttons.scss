@@ -1,0 +1,23 @@
+@use '../base/variables';
+
+.filter-buttons {
+  display: flex;
+  gap:10px;
+  margin: 20px 0;
+  flex-wrap:wrap;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-size:14px;
+}
+
+.filter-btn.active {
+  color: variables.$background-grey;
+  background-color: #5da3ee;
+  border-color: #186cc5;
+}

@@ -1,0 +1,50 @@
+@use '../base/variables';
+@use 'sass:color';
+
+.button {
+  background-color: variables.$main-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: color.adjust(variables.$main-color, $lightness: -10%);
+  }
+}
+
+.property-login a,
+.header-right a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid variables.$main-color;
+  cursor: pointer;
+}
+
+.property-login a {
+  background-color: #fff;
+  color: variables.$main-color;
+}
+
+.property-login a:hover,
+.header-right a:hover {
+  background-color: lighten(variables.$main-color, 40%);
+  color: darken(variables.$main-color, 20%);
+}
+
+.property{
+  color: #fff;
+  font-size: 14px;
+  font-weight:500;
+}
+
+.property-image{
+  width:32px;
+  height:32px;
+  margin-top:5px;
+}
